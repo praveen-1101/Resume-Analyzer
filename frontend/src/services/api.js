@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:7000/api';
+
 
 export async function analyzeResume(file, jobDescription) {
   try {
@@ -6,7 +6,7 @@ export async function analyzeResume(file, jobDescription) {
     formData.append('resume', file);
     formData.append('jobDescription', jobDescription);
 
-    const response = await fetch(`${API_URL}/analyze`, {
+    const response = await fetch(`http://localhost:7000/api/analyze`, {
       method: 'POST',
       body: formData,
     });
