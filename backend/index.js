@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 7000;
 // Middleware
 const corsOptions = 
 {
-  origin:['https://resume-analyzer-blue.vercel.app/'],
+  origin:['https://resume-analyzer-blue.vercel.app'],
   methods: ['GET', 'POST'],
   credentials: true,
 };

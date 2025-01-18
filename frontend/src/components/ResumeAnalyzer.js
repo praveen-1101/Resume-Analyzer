@@ -67,8 +67,6 @@ export function ResumeAnalyzer() {
       setWarningMessage('Resume upload is required.');
       return;
     }
-     
-  console.log("Both fields are filled, proceeding to analyze");
     setIsAnalyzing(true);
     setResults(null);
     setWarningMessage(''); 
