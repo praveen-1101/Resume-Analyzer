@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 7000;
 // Middleware
 const corsOptions = 
 {
-  origin:['https://resume-analyzer-frontend-eight.vercel.app', 'http://localhost:7000/api'],
+  origin:['https://resume-analyzer-frontend-eight.vercel.app', 'http://localhost:7000'],
   methods: ['GET', 'POST'],
   credentials: true,
 };
