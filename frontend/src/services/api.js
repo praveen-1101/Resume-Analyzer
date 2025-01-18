@@ -6,7 +6,7 @@ export async function analyzeResume(file, jobDescription) {
     formData.append('resume', file);
     formData.append('jobDescription', jobDescription);
 
-    const response = await fetch(`http://localhost:7000/api/analyze`, {
+    const response = await fetch(`https://resume-analyzer-backend-seven.vercel.app/analyze`, {
       method: 'POST',
       body: formData,
     });
