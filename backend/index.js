@@ -38,6 +38,9 @@ const upload = multer({
 
 // API Routes
 app.post('/api/analyze', upload.single('resume'), analyzeResume);
+app.get('/', (req, res) => {
+  res.send('Backend is running. Use the API at /api/analyze');
+});
 
 // Error handling middleware
 app.use((err, req, res, next) => {

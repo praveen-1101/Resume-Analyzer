@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-spacy": "call .\\venv\\Scripts\\activate && python -m pip install spacy && python -m spacy download en_core_web_sm"
+    "install-spacy": "call .\\venv\\Scripts\\activate && python -m pip install spacy && python -m spacy download en_core_web_sm",
+     "start": "node index.js"
   },
   "keywords": [],
   "author": "",
