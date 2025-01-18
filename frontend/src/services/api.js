@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:7000/api';
+const API_URL = 'https://resume-analyzer-backend-puce.vercel.app/api';
 
 export async function analyzeResume(file, jobDescription) {
   try {

@@ -9,15 +9,14 @@ const app = express();
 const PORT = process.env.PORT || 7000;
 
 // Middleware
-/* const corsOptions = 
+const corsOptions = 
 {
-  origin:['https://resume-analyzer-blue.vercel.app'],
+  origin:['https://resume-analyzer-frontend-eight.vercel.app', 'http://localhost:7000/api'],
   methods: ['GET', 'POST'],
   credentials: true,
 };
 
-app.use(cors(corsOptions)); */
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, '../public')));
