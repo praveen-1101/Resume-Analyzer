@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 7000;
 // Middleware
 const corsOptions = 
 {
-  origin:['https://resume-analyzer-blue.vercel.app/analyzer'],
+  origin:['https://resume-analyzer-blue.vercel.app'],
   methods: ['GET', 'POST'],
   credentials: true,
 };
@@ -37,7 +37,7 @@ const upload = multer({
 });
 
 // API Routes
-app.post('/api/analyzer', upload.single('resume'), analyzeResume);
+app.post('/api/analyze', upload.single('resume'), analyzeResume);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
