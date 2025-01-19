@@ -39,16 +39,16 @@ export function ContactInfo() {
         />
         <ContactDetail
           icon={<MapPin className="h-6 w-6 text-white" />}
-          title="Address"
+          title="Location"
           detail="Visakhapatnam, Andhra Pradesh"
           iconBg="bg-red-600"
         />
       </section>
 
       {/* Social Media Links Section */}
-      <footer className="text-center">
+      <footer className="text-center flex flex-col items-center">
         <h3 className="text-lg font-semibold text-gray-700">Follow Us</h3>
-        <SocialMediaLinks className="mt-2"/>
+        <SocialMediaLinks className="mt-2 flex space-x-4 justify-center"/>
       </footer>
     </section>
   );
