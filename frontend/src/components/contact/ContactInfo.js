@@ -29,7 +29,7 @@ export function ContactInfo() {
           title="Email"
           detail={
             <a
-              href="mailto:praveen.resumeanalyzer@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=praveen.resumeanalyzer@gmail.com"
               className="text-base text-gray-600 hover:text-green-700 break-all"
             >
               praveen.resumeanalyzer@gmail.com
