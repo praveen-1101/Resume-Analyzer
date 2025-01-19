@@ -22,7 +22,7 @@ export function Contact() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#f9fafb] to-[#e7ebf0] flex items-center justify-center">
       <section className="max-w-4xl w-full bg-white shadow-2xl overflow-hidden">
-        <header className="text-center bg-gradient-to-r from-blue-500 to-blue-600 py-8">
+        <header className="text-center bg-gradient-to-r from-indigo-700 to-indigo-800 py-8">
           <h1 className="text-3xl font-extrabold text-white">Contact Us</h1>
           <p className="text-white mt-2">We'd love to hear from you!</p>
         </header>
