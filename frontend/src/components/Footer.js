@@ -61,7 +61,7 @@ export function Footer() {
             </h3>
             <div className="mt-4 flex space-x-6">
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=borapraveen1101@gmail.com"
+                href="mailto:borapraveen1101@gmail.com"
                 className="text-gray-300 hover:text-[#FACC15] transition"
                 aria-label="Contact via Email"
                 target="_blank"

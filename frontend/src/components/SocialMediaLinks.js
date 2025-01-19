@@ -32,7 +32,7 @@ const socialLinks = [
   {
     name: 'Email',
     icon: Mail,
-    url: 'https://mail.google.com/mail/?view=cm&fs=1&to=borapraveen1101@gmail.com',
+    url: 'mailto:borapraveen1101@gmail.com',
     color: 'hover:text-[#EA4335]',
     ariaLabel: 'Send me an email'
   }
