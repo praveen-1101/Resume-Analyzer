@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, CheckCircle, XCircle} from 'lucide-react';
+import { Download, CheckCircle, /* ArrowUpRight */ XCircle, /* ExternalLink */ } from 'lucide-react';
 
 export function AnalysisResults({ isLoading, results, onDownload }) {
   if (isLoading) {
@@ -21,21 +21,26 @@ export function AnalysisResults({ isLoading, results, onDownload }) {
   const hasMissingSkills = missingSkills.length > 0;
 
   return (
-    <div className="space-y-6 bg-white rounded-lg shadow p-6">
+    <div className="space-y-6 bg-white rounded-lg shadow p-4">
       {/* Header */}
-      <div className="flex justify-between items-center  transition-all duration-300 ease-in-out p-4 rounded-xl">
+      <div className="flex justify-around items-center  transition-all duration-300 ease-in-out rounded-xl">
   <h2 className="text-xl font-semibold text-gray-900">Analysis Results</h2>
   <button
-    onClick={onDownload}
-    className="relative inline-flex items-center px-8 py-3 text-lg font-semibold text-white bg-gradient-to-b from-[#ef6706] via-[#f07a0b] to-[#ba2323] rounded-full shadow-md hover:shadow-xl hover:bg-gradient-to-b hover:from-[#ef6706] hover:via-[#f07a0b] hover:to-[#ba2323] hover:scale-105 focus:outline-none transition-all duration-300 ease-in-out"
-  >
-    <span className="absolute inset-0 bg-gradient-to-r from-[#ef6706] via-[#f07a0b] to-[#ba2323] opacity-0 transition-opacity duration-300 rounded-full hover:opacity-30"></span>
-    <span className="relative flex items-center">
-      <Download className="h-5 w-5 mr-2 animate-bounce-slow text-white" />
-      Download Report
-    </span>
-  </button>
+  onClick={onDownload}
+  className="relative inline-flex items-center px-4 py-2 ml-2 text-base sm:text-lg font-semibold text-white bg-gradient-to-b from-[#ef6706] via-[#f07a0b] to-[#ba2323] rounded-full shadow-md hover:shadow-xl hover:bg-gradient-to-b hover:from-[#ef6706] hover:via-[#f07a0b] hover:to-[#ba2323] hover:scale-105 focus:outline-none transition-all duration-300 ease-in-out"
+><span className="relative flex items-center">
+    <Download className="h-5 w-5 mr-2 animate-bounce-slow text-white" />
+    Download
+  </span>
+</button>
+
 </div>
+
+
+
+
+
+
       <div className="space-y-6">
         {/* Match Rate Section */}
         <section className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
@@ -119,13 +124,7 @@ export function AnalysisResults({ isLoading, results, onDownload }) {
             </section>
           )}
         </div>
-
-        
-      
-
-        
-
-               <section className="space-y-4">
+       <section className="space-y-4">
         <h3 className="text-lg font-medium text-gray-900">Recommendations</h3>
         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 space-y-4">
           {/* No Matching Skills */}

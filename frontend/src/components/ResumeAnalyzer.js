@@ -36,7 +36,7 @@ export function ResumeAnalyzer() {
   useEffect(() => 
   {
     const savedJobDescription = localStorage.getItem('jobDescription');
-    
+
     if (savedJobDescription) 
     {
       setJobDescription(savedJobDescription);
@@ -67,8 +67,6 @@ export function ResumeAnalyzer() {
       setWarningMessage('Resume upload is required.');
       return;
     }
-     
-  console.log("Both fields are filled, proceeding to analyze");
     setIsAnalyzing(true);
     setResults(null);
     setWarningMessage(''); 
@@ -124,8 +122,6 @@ export function ResumeAnalyzer() {
     localStorage.removeItem('selectedFile');
     localStorage.removeItem('resumeAnalysisResults');
   };
-  
-
   return (
     <div className="min-h-screen bg-[#b0c4d2] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -227,6 +223,7 @@ export function ResumeAnalyzer() {
                   results={results}
                   onDownload={handleDownload}
                 />
+                {/* Start New Analysis Button */}
                 <div className="flex justify-center items-center mt-8">
                   <button
                     onClick={handleStartNew}
