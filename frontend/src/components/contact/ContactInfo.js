@@ -40,7 +40,7 @@ export function ContactInfo() {
         <ContactDetail
           icon={<MapPin className="h-6 w-6 text-white" />}
           title="Address"
-          detail="Vignan College, India"
+          detail="Visakhapatnam, Andhra Pradesh"
           iconBg="bg-red-600"
         />
       </section>
@@ -48,7 +48,7 @@ export function ContactInfo() {
       {/* Social Media Links Section */}
       <footer className="text-center">
         <h3 className="text-lg font-semibold text-gray-700">Follow Us</h3>
-        <SocialMediaLinks />
+        <SocialMediaLinks className="mt-2"/>
       </footer>
     </section>
   );
