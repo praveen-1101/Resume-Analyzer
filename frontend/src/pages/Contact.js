@@ -33,7 +33,7 @@ export function Contact() {
               onClick={() => setActiveSection("info")}
               className={`w-full sm:w-auto px-6 py-3 text-sm font-semibold rounded-lg transition-all ${
                 activeSection === "info"
-                  ? "bg-indigo-700 text-white shadow-md"
+                  ? "bg-[#4c4c9a] text-white shadow-md"
                   : "bg-gray-100 hover:bg-gray-200 text-gray-800"
               }`}
             >
@@ -43,7 +43,7 @@ export function Contact() {
               onClick={() => setActiveSection("form")}
               className={`w-full sm:w-auto px-6 py-3 text-sm font-semibold rounded-lg transition-all ${
                 activeSection === "form"
-                  ? "bg-indigo-700 text-white shadow-md"
+                  ? "bg-bg-[#4c4c9a] text-white shadow-md"
                   : "bg-gray-100 hover:bg-gray-200 text-gray-800"
               }`}
             >
@@ -53,7 +53,7 @@ export function Contact() {
               onClick={() => setActiveSection("feedback")}
               className={`w-full sm:w-auto px-6 py-3 text-sm font-semibold rounded-lg transition-all ${
                 activeSection === "feedback"
-                  ? "bg-indigo-700 text-white shadow-md"
+                  ? "bg-bg-[#4c4c9a] text-white shadow-md"
                   : "bg-gray-100 hover:bg-gray-200 text-gray-800"
               }`}
             >
