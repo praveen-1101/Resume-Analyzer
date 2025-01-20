@@ -22,7 +22,7 @@ export function Contact() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#f9fafb] to-[#e7ebf0] flex items-center justify-center">
       <section className="max-w-4xl w-full bg-white shadow-2xl overflow-hidden">
-        <header className="text-center bg-gradient-to-r from-[#4B6F9A] to-[#2c4b71] py-8">
+        <header className="text-center bg-gradient-to-r from-[#2a65ad] to-[#0d56af] py-8">
           <h1 className="text-3xl font-extrabold text-white">Contact Us</h1>
           <p className="text-white mt-2">We'd love to hear from you!</p>
         </header>
@@ -33,7 +33,7 @@ export function Contact() {
               onClick={() => setActiveSection("info")}
               className={`w-full sm:w-auto px-6 py-3 text-sm font-semibold rounded-lg transition-all ${
                 activeSection === "info"
-                  ? "bg-[#4c4c9a] text-white shadow-md"
+                  ? "bg-[#222277] text-white shadow-md"
                   : "bg-gray-100 hover:bg-gray-200 text-gray-800"
               }`}
             >
@@ -43,7 +43,7 @@ export function Contact() {
               onClick={() => setActiveSection("form")}
               className={`w-full sm:w-auto px-6 py-3 text-sm font-semibold rounded-lg transition-all ${
                 activeSection === "form"
-                  ? "bg-bg-[#4c4c9a] text-white shadow-md"
+                  ? "bg-[#222277] text-white shadow-md"
                   : "bg-gray-100 hover:bg-gray-200 text-gray-800"
               }`}
             >
@@ -53,7 +53,7 @@ export function Contact() {
               onClick={() => setActiveSection("feedback")}
               className={`w-full sm:w-auto px-6 py-3 text-sm font-semibold rounded-lg transition-all ${
                 activeSection === "feedback"
-                  ? "bg-bg-[#4c4c9a] text-white shadow-md"
+                  ? "bg-[#222277] text-white shadow-md"
                   : "bg-gray-100 hover:bg-gray-200 text-gray-800"
               }`}
             >
