@@ -163,7 +163,6 @@ export function ResumeAnalyzer() {
                
                 <motion.button
                 onClick={handleAnalyze}
-                disabled={!jobDescription || !selectedFile || isAnalyzing}
                 className={`w-2/5 px-6 py-3 text-lg font-medium text-white rounded-full transition-all duration-300 ease-in-out transform ${
                   isAnalyzing
                     ? 'bg-gray-400 text-gray-200 cursor-not-allowed'
