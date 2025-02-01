@@ -217,7 +217,20 @@ export function AnalysisResults({ isLoading, results, onDownload }) {
               </p>
             </div>
 
-            
+            {/* Custom Recommendations */}
+            {!isPerfectMatch && (
+              <div className="space-y-3">
+                {customRecommendations.map((recommendation, index) => (
+                  <div 
+                    key={index} 
+                    className="flex items-start space-x-2 p-2 rounded-lg hover:bg-white/50 transition-colors duration-200"
+                  >
+                    <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <p className="text-gray-700">{recommendation}</p>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
       </div>
